@@ -1,0 +1,88 @@
+<link rel="import" href="../core-icon-button/core-icon-button.html">
+<link rel="import" href="../core-toolbar/core-toolbar.html">
+<link rel="import" href="../core-header-panel/core-header-panel.html">
+<link rel="import" href="../chart-js/chart-js.html">
+<link rel="import" href="../cool-clock/cool-clock.html">
+<link rel="import" href="../paper-button/paper-button.html">
+
+<polymer-element name="my-element">
+
+  <template>
+    <style>    
+      :host {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      #smoothie_chart {
+        left: 1660px;
+        top: 600px;
+      }
+      #smoothie_chart1 {
+        left: 1680px;
+        top: 590px;
+      }
+      #core_header_panel {
+        width: 670px;
+        height: 760px;
+        left: 50px;
+        top: 20px;
+        position: absolute;
+      }
+      #core_toolbar {
+        color: rgb(255, 255, 255);
+        background-color: rgb(79, 125, 201);
+      }
+      #section {
+        height: 1000px;
+        background: linear-gradient(rgb(214, 227, 231), lightblue);
+      }
+      #chart_js {
+        width: 300px;
+        height: 200px;
+        left: 250px;
+        top: 316px;
+        position: absolute;
+      }
+      #cool_clock {
+        width: 400px;
+        height: 300px;
+        left: 390px;
+        top: 256px;
+        position: absolute;
+      }
+      #paper_button {
+        left: 203px;
+        top: 176px;
+        position: absolute;
+      }
+    </style>
+    <core-header-panel mode="standard" id="core_header_panel">
+      <core-toolbar id="core_toolbar">
+        <core-icon-button icon="menu" id="core_icon_button"></core-icon-button>
+        <div id="div">Ticmania</div>
+      </core-toolbar>
+      <section id="section">
+        <br id="br"></br>
+        <br id="br4"></br>
+        <br id="br1"></br>
+        <br id="br5"></br>
+        <br id="br2"></br>
+        <br id="br6"></br>
+        <br id="br3"></br>
+        <br id="br7"></br>
+        <chart-js kind="dftgdfgdfg" id="chart_js">fdgdfgdf</chart-js>
+        <cool-clock id="cool_clock"></cool-clock>
+        <paper-button id="paper_button">button</paper-button>
+      </section>
+    </core-header-panel>
+  </template>
+
+  <script>
+    Polymer({
+      
+    });
+  </script>
+
+</polymer-element>
